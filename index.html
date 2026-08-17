@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samuel Georges RENAMY — Développeur & Passionné d'IA</title>
+<meta name="description" content="Portfolio de Samuel Georges RENAMY, développeur passionné d'intelligence artificielle basé à Libreville, Gabon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Bruit / scanlines d'ambiance cyberpunk -->
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- Curseur néon personnalisé -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="siteHeader">
+  <nav class="navbar">
+    <a href="#accueil" class="logo" aria-label="RENAMS — Accueil">
+      <span class="logo-text" data-text="RENAMS">RENAMS</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil" class="nav-link active" data-link>Accueil</a></li>
+      <li><a href="#apropos" class="nav-link" data-link>À propos</a></li>
+      <li><a href="#competences" class="nav-link" data-link>Compétences</a></li>
+      <li><a href="#experiences" class="nav-link" data-link>Expériences</a></li>
+      <li><a href="#formation" class="nav-link" data-link>Formation</a></li>
+      <li><a href="#contact" class="nav-link" data-link>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ==================== HERO / ACCUEIL ==================== -->
+  <section id="accueil" class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--violet" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--cyan" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow"><span class="terminal-caret">&gt;</span> system.boot() — session initialisée</p>
+
+      <h1 class="hero-name">
+        Samuel Georges <span class="text-gradient">RENAMY</span>
+      </h1>
+
+      <h2 class="hero-title" id="glitchTitle" data-text="Développeur & Passionné d'IA">
+        Développeur &amp; Passionné d'IA
+      </h2>
+
+      <p class="hero-desc">
+        Je conçois des expériences numériques robustes et j'explore les frontières
+        de l'intelligence artificielle, avec la rigueur d'un ingénieur et la curiosité
+        d'un gamer.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#experiences" class="btn btn--primary">
+          <span>Voir mes projets</span>
+        </a>
+        <a href="#contact" class="btn btn--outline">
+          <span>Me contacter</span>
+        </a>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== À PROPOS ==================== -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <p class="section-eyebrow">01 // Identité</p>
+      <h2 class="section-title">À propos <span class="text-gradient">de moi</span></h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis un passionné d'informatique, doté d'une bonne capacité d'apprentissage
+            et animé par la volonté constante de rester à jour avec les dernières avancées
+            technologiques. Chaque ligne de code est pour moi une occasion d'apprendre et
+            de repousser mes propres limites.
+          </p>
+          <p>
+            Curieux de nature, je nourris mon esprit logique et créatif à travers plusieurs
+            centres d'intérêt qui influencent directement ma façon de résoudre les problèmes.
+          </p>
+
+          <ul class="interests-list">
+            <li><span class="interest-icon">🎮</span> Jeux vidéos</li>
+            <li><span class="interest-icon">💻</span> Technologie</li>
+            <li><span class="interest-icon">📚</span> Lecture</li>
+            <li><span class="interest-icon">🏃</span> Sports</li>
+            <li><span class="interest-icon">✈️</span> Voyage</li>
+          </ul>
+        </div>
+
+        <div class="about-terminal" role="img" aria-label="Fenêtre de terminal décorative">
+          <div class="terminal-bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal-title">renamy@portfolio:~</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="typed-line" data-line="0"></p>
+            <p><span class="prompt">$</span> cat profil.json</p>
+            <p class="typed-line" data-line="1"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COMPÉTENCES ==================== -->
+  <section id="competences" class="section section--alt">
+    <div class="container">
+      <p class="section-eyebrow">02 // Stack</p>
+      <h2 class="section-title">Mes <span class="text-gradient">compétences</span></h2>
+
+      <div class="skills-grid">
+
+        <!-- Compétences techniques -->
+        <div class="skills-block">
+          <h3 class="skills-block-title">Techniques</h3>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Programmation Informatique</span><span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-fill="90"></div></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Intelligence Artificielle</span><span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-fill="80"></div></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head">
+              <span>Maintenance Informatique</span><span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-fill="85"></div></div>
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="skills-block">
+          <h3 class="skills-block-title">Langues</h3>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head"><span>Français</span><span class="skill-percent">C2</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="100"></div></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head"><span>Anglais</span><span class="skill-percent">B2</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="70"></div></div>
+          </div>
+
+          <div class="skill-bar">
+            <div class="skill-bar-head"><span>Italien</span><span class="skill-percent">B1</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="55"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="skills-block">
+          <h3 class="skills-block-title">Soft Skills</h3>
+          <div class="badges">
+            <span class="badge">Travail d'équipe</span>
+            <span class="badge">Adaptation rapide</span>
+            <span class="badge">Ponctualité</span>
+            <span class="badge">Respect des délais</span>
+            <span class="badge">Sens de la discrétion</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPÉRIENCES ==================== -->
+  <section id="experiences" class="section">
+    <div class="container">
+      <p class="section-eyebrow">03 // Parcours</p>
+      <h2 class="section-title">Expériences <span class="text-gradient">professionnelles</span></h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Juillet 2025 – Octobre 2025</span>
+            <h3 class="timeline-role">Stagiaire</h3>
+            <p class="timeline-company">Gabon Quotidien</p>
+            <p class="timeline-desc">
+              Création d'une plateforme privée d'enregistrement et de diffusion
+              multi-stream, projet réalisé dans le cadre de ma soutenance de Licence.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Janvier 2024 – Juin 2024</span>
+            <h3 class="timeline-role">Stagiaire Pro</h3>
+            <p class="timeline-company">Mandju Energie</p>
+            <p class="timeline-desc">
+              Conception d'un site web sous WordPress et collaboration au sein
+              du service de développement de l'entreprise.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Juin 2022 – Décembre 2022</span>
+            <h3 class="timeline-role">Stagiaire</h3>
+            <p class="timeline-company">Nibenz</p>
+            <p class="timeline-desc">
+              Mise en place d'une application mobile au sein du pool de
+              développement informatique.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FORMATION ==================== -->
+  <section id="formation" class="section section--alt">
+    <div class="container">
+      <p class="section-eyebrow">04 // Diplômes</p>
+      <h2 class="section-title">Ma <span class="text-gradient">formation</span></h2>
+
+      <div class="education-grid">
+        <div class="education-card">
+          <span class="education-date">2024 – 2025</span>
+          <h3>Licence en Génie Informatique</h3>
+          <p>INPTIC</p>
+        </div>
+        <div class="education-card">
+          <span class="education-date">2020 – 2022</span>
+          <h3>DTS en Génie Informatique</h3>
+          <p>INPTIC</p>
+        </div>
+        <div class="education-card">
+          <span class="education-date">2017 – 2018</span>
+          <h3>Baccalauréat scientifique (BAC C)</h3>
+          <p>Lycée d'Application Nelson MANDELA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-eyebrow">05 // Connexion</p>
+      <h2 class="section-title">Me <span class="text-gradient">contacter</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-lead">
+            Une idée, un projet ou simplement une question ? Le canal est ouvert.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Localisation</span>
+              <span class="contact-value">Libreville, Gabon</span>
+            </li>
+            <li>
+              <span class="contact-label">Téléphone</span>
+              <span class="contact-value">066 48 36 39 / 077 87 04 20</span>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">renamysamuel@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Envoyer le message</span>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo-text logo-text--small" data-text="RENAMS">RENAMS</span>
+    <p>&copy; <span id="year"></span> Samuel Georges RENAMY. Tous droits réservés.</p>
+    <a href="#accueil" class="back-to-top" aria-label="Retour en haut">↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
